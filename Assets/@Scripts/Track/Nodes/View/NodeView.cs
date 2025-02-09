@@ -8,7 +8,7 @@ namespace Track.Nodes.View
     {
         [SerializeField] private TextMeshPro nameView;
         private Node _node;
-    
+        
         private void Start()
         {
             _node = GetComponent<Node>();
@@ -16,16 +16,16 @@ namespace Track.Nodes.View
             UpdateNodeNameView(_node.NodeName);
             _node.OnNodeNameChanged += UpdateNodeNameView;
         }
-
-        private void UpdateNodeNameView(string nodeName)
-        {
-            nameView.text = nodeName;
-        }
-
+        
         private void OnDisable()
         {
             _node.OnNodeNameChanged -= UpdateNodeNameView;
             nameView.text = "";
+        }
+        
+        private void UpdateNodeNameView(string nodeName)
+        {
+            nameView.text = nodeName;
         }
     }
 }

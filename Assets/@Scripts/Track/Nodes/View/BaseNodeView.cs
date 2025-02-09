@@ -9,7 +9,7 @@ namespace Track.Nodes.View
     {
         [SerializeField] private TextMeshPro sellPriceView;
         private BaseNode _node;
-    
+        
         private void Start()
         {
             _node = GetComponent<BaseNode>();
@@ -17,16 +17,16 @@ namespace Track.Nodes.View
             UpdateSellPriceView(_node.SellPrice);
             _node.OnSellPriceChanged += UpdateSellPriceView;
         }
-
-        private void UpdateSellPriceView(float sellPrice)
-        {
-            sellPriceView.text = sellPrice.ToString("0.##", CultureInfo.InvariantCulture) + "x";
-        }
-
+        
         private void OnDisable()
         {
             _node.OnSellPriceChanged -= UpdateSellPriceView;
             sellPriceView.text = "";
+        }
+        
+        private void UpdateSellPriceView(float sellPrice)
+        {
+            sellPriceView.text = sellPrice.ToString("0.##", CultureInfo.InvariantCulture) + "x";
         }
     }
 }
