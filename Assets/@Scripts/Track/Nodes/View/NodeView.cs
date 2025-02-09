@@ -12,13 +12,19 @@ namespace Track.Nodes.View
         private void Start()
         {
             _node = GetComponent<Node>();
-            
-            nameView.text = _node.NodeName;
-            _node.OnNodeNameChanged += nodeName => nameView.text = nodeName;
+
+            UpdateNodeNameView(_node.NodeName);
+            _node.OnNodeNameChanged += UpdateNodeNameView;
+        }
+
+        private void UpdateNodeNameView(string nodeName)
+        {
+            nameView.text = nodeName;
         }
 
         private void OnDisable()
         {
+            _node.OnNodeNameChanged -= UpdateNodeNameView;
             nameView.text = "";
         }
     }

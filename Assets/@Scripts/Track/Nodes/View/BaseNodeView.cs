@@ -14,13 +14,18 @@ namespace Track.Nodes.View
         {
             _node = GetComponent<BaseNode>();
             
-            sellPriceView.text = _node.SellPrice.ToString("0.##", CultureInfo.InvariantCulture) + "x";
-            _node.OnSellPriceChanged += sellPrice => 
-                sellPriceView.text = sellPrice.ToString("0.##", CultureInfo.InvariantCulture) + "x";
+            UpdateSellPriceView(_node.SellPrice);
+            _node.OnSellPriceChanged += UpdateSellPriceView;
+        }
+
+        private void UpdateSellPriceView(float sellPrice)
+        {
+            sellPriceView.text = sellPrice.ToString("0.##", CultureInfo.InvariantCulture) + "x";
         }
 
         private void OnDisable()
         {
+            _node.OnSellPriceChanged -= UpdateSellPriceView;
             sellPriceView.text = "";
         }
     }

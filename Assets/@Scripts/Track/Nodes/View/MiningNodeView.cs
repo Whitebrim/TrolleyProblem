@@ -13,14 +13,19 @@ namespace Track.Nodes.View
         private void Start()
         {
             _node = GetComponent<MiningNode>();
-            
-            miningModificatorView.text = _node.MiningModificator.ToString("0.##", CultureInfo.InvariantCulture) + "x";
-            _node.OnMiningModificatorChanged += miningModificator => 
-                miningModificatorView.text = miningModificator.ToString("0.##", CultureInfo.InvariantCulture) + "x";
+
+            UpdateMiningModificatorView(_node.MiningModificator);
+            _node.OnMiningModificatorChanged += UpdateMiningModificatorView;
         }
-        
+
+        private void UpdateMiningModificatorView(float miningModificator)
+        {
+            miningModificatorView.text = miningModificator.ToString("0.##", CultureInfo.InvariantCulture) + "x";
+        }
+
         private void OnDisable()
         {
+            _node.OnMiningModificatorChanged -= UpdateMiningModificatorView;
             miningModificatorView.text = "";
         }
     }
