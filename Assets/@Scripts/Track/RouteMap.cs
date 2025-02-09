@@ -1,3 +1,4 @@
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using Sirenix.OdinInspector;
@@ -8,6 +9,7 @@ namespace Track
 {
     public class RouteMap : SerializedMonoBehaviour
     {
+        public event Action OnRouteMapChanged;
         [field: SerializeField] public Dictionary<Node, List<Edge>> Map { get; } = new();
 
         private void OnValidate()
@@ -38,6 +40,7 @@ namespace Track
                     }
                 }
             }
+            OnRouteMapChanged?.Invoke();
         }
     }
 }

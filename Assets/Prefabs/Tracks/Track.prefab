@@ -10,6 +10,7 @@ GameObject:
   m_Component:
   - component: {fileID: 258320067414144844}
   - component: {fileID: 7891881149945761677}
+  - component: {fileID: 8522470726253704560}
   m_Layer: 0
   m_Name: Track
   m_TagString: Untagged
@@ -58,9 +59,16 @@ MonoBehaviour:
     SerializedFormat: 2
     SerializedBytes: 
     ReferencedUnityObjects:
-    - {fileID: 5290074572363776779}
     - {fileID: 6562641184871242993}
+    - {fileID: 5290074572363776779}
+    - {fileID: 8819523194040484397}
+    - {fileID: 8257594211551532967}
     - {fileID: 8274004023480042467}
+    - {fileID: 163482710096800239}
+    - {fileID: 6702490178688079236}
+    - {fileID: 5093668807169793610}
+    - {fileID: 7535342407733698640}
+    - {fileID: 8485803391836804992}
     SerializedBytesString: 
     Prefab: {fileID: 0}
     PrefabModificationsReferencedUnityObjects: []
@@ -79,7 +87,7 @@ MonoBehaviour:
       Data: 
     - Name: 
       Entry: 12
-      Data: 3
+      Data: 10
     - Name: 
       Entry: 7
       Data: 
@@ -103,7 +111,7 @@ MonoBehaviour:
       Data: 1
     - Name: weight
       Entry: 3
-      Data: 1
+      Data: 10
     - Name: 
       Entry: 8
       Data: 
@@ -127,7 +135,7 @@ MonoBehaviour:
       Data: 4|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]], mscorlib
     - Name: 
       Entry: 12
-      Data: 2
+      Data: 3
     - Name: 
       Entry: 9
       Data: 3
@@ -142,7 +150,22 @@ MonoBehaviour:
       Data: 2
     - Name: weight
       Entry: 3
-      Data: 22
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 6|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 1
+    - Name: nodeB
+      Entry: 10
+      Data: 3
+    - Name: weight
+      Entry: 3
+      Data: 50
     - Name: 
       Entry: 8
       Data: 
@@ -163,13 +186,313 @@ MonoBehaviour:
       Data: 2
     - Name: $v
       Entry: 7
-      Data: 6|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]], mscorlib
+      Data: 7|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 5
+    - Name: 
+      Entry: 7
+      Data: 8|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 2
+    - Name: nodeB
+      Entry: 10
+      Data: 4
+    - Name: weight
+      Entry: 3
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 3
+    - Name: $v
+      Entry: 7
+      Data: 9|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 6
+    - Name: 
+      Entry: 7
+      Data: 10|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 5
+    - Name: nodeB
+      Entry: 10
+      Data: 3
+    - Name: weight
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 4
+    - Name: $v
+      Entry: 7
+      Data: 11|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 2
+    - Name: 
+      Entry: 9
+      Data: 8
+    - Name: 
+      Entry: 7
+      Data: 12|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 4
+    - Name: nodeB
+      Entry: 10
+      Data: 6
+    - Name: weight
+      Entry: 3
+      Data: 50
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 6
+    - Name: $v
+      Entry: 7
+      Data: 13|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 9
+      Data: 12
+    - Name: 
+      Entry: 7
+      Data: 14|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 6
+    - Name: nodeB
+      Entry: 10
+      Data: 7
+    - Name: weight
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 15|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 6
+    - Name: nodeB
+      Entry: 10
+      Data: 5
+    - Name: weight
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 7
+    - Name: $v
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 3
+    - Name: 
+      Entry: 9
+      Data: 14
+    - Name: 
+      Entry: 7
+      Data: 17|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 7
+    - Name: nodeB
+      Entry: 10
+      Data: 5
+    - Name: weight
+      Entry: 3
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 18|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 7
+    - Name: nodeB
+      Entry: 10
+      Data: 8
+    - Name: weight
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 5
+    - Name: $v
+      Entry: 7
+      Data: 19|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 9
+      Data: 15
+    - Name: 
+      Entry: 9
+      Data: 17
+    - Name: 
+      Entry: 7
+      Data: 20|Track.Edge, Assembly-CSharp
+    - Name: nodeA
+      Entry: 10
+      Data: 5
+    - Name: nodeB
+      Entry: 10
+      Data: 9
+    - Name: weight
+      Entry: 3
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 9
+      Data: 10
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 8
+    - Name: $v
+      Entry: 7
+      Data: 21|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]],
+        mscorlib
     - Name: 
       Entry: 12
       Data: 1
     - Name: 
       Entry: 9
-      Data: 5
+      Data: 18
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 
+    - Name: $k
+      Entry: 10
+      Data: 9
+    - Name: $v
+      Entry: 7
+      Data: 22|System.Collections.Generic.List`1[[Track.Edge, Assembly-CSharp]],
+        mscorlib
+    - Name: 
+      Entry: 12
+      Data: 1
+    - Name: 
+      Entry: 9
+      Data: 20
     - Name: 
       Entry: 13
       Data: 
@@ -185,6 +508,28 @@ MonoBehaviour:
     - Name: 
       Entry: 8
       Data: 
+--- !u!114 &8522470726253704560
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2349663080408454350}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f770e9c326cec95439bf6b2c61311687, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects: []
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes: []
+  edgeViewPrefab: {fileID: 967068595058312878, guid: c546b66d6f77ec845aa4125786ec27c5, type: 3}
 --- !u!1001 &1252848148280427670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -255,6 +600,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1000246248610641501, guid: a8fce14e92fbb4f43ab77d0f26e408cc, type: 3}
   m_PrefabInstance: {fileID: 1252848148280427670}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8819523194040484397 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7711921081637455547, guid: a8fce14e92fbb4f43ab77d0f26e408cc, type: 3}
+  m_PrefabInstance: {fileID: 1252848148280427670}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777f39475946f74a9dcf0f2c557a004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1320865575944380949
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -328,6 +684,17 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 3e876096e3f56a843b0753b4f1f45eaa, type: 3}
+--- !u!114 &163482710096800239 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1157537901417335802, guid: 3e876096e3f56a843b0753b4f1f45eaa, type: 3}
+  m_PrefabInstance: {fileID: 1320865575944380949}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5945f0e49a5e4ca392a38d3ec6efad53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &9147585553630659654 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7829060066259134035, guid: 3e876096e3f56a843b0753b4f1f45eaa, type: 3}
@@ -484,6 +851,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 1000246248610641501, guid: a8fce14e92fbb4f43ab77d0f26e408cc, type: 3}
   m_PrefabInstance: {fileID: 3293934079196469489}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &5093668807169793610 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7711921081637455547, guid: a8fce14e92fbb4f43ab77d0f26e408cc, type: 3}
+  m_PrefabInstance: {fileID: 3293934079196469489}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2777f39475946f74a9dcf0f2c557a004, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4878161586839736157
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -643,6 +1021,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690000859566312515, guid: dc9c53c21653ecc42a5e33d58622ae63, type: 3}
   m_PrefabInstance: {fileID: 4898019613339441945}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8257594211551532967 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3558297582686407870, guid: dc9c53c21653ecc42a5e33d58622ae63, type: 3}
+  m_PrefabInstance: {fileID: 4898019613339441945}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1c63f0df024eba8fa0cd3cac918e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &4945583466924956478
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -721,6 +1110,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690000859566312515, guid: dc9c53c21653ecc42a5e33d58622ae63, type: 3}
   m_PrefabInstance: {fileID: 4945583466924956478}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &8485803391836804992 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3558297582686407870, guid: dc9c53c21653ecc42a5e33d58622ae63, type: 3}
+  m_PrefabInstance: {fileID: 4945583466924956478}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1c63f0df024eba8fa0cd3cac918e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &5405245296547550987
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -888,6 +1288,17 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7829060066259134035, guid: 3e876096e3f56a843b0753b4f1f45eaa, type: 3}
   m_PrefabInstance: {fileID: 5554171824137789054}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &6702490178688079236 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1157537901417335802, guid: 3e876096e3f56a843b0753b4f1f45eaa, type: 3}
+  m_PrefabInstance: {fileID: 5554171824137789054}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5945f0e49a5e4ca392a38d3ec6efad53, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &6481653148686544110
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -966,3 +1377,14 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 7690000859566312515, guid: dc9c53c21653ecc42a5e33d58622ae63, type: 3}
   m_PrefabInstance: {fileID: 6481653148686544110}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7535342407733698640 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 3558297582686407870, guid: dc9c53c21653ecc42a5e33d58622ae63, type: 3}
+  m_PrefabInstance: {fileID: 6481653148686544110}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ed1c63f0df024eba8fa0cd3cac918e37, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
